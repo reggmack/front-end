@@ -1,0 +1,9 @@
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+section #main-banner {
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+}
