@@ -28,8 +28,7 @@ body, html {
     color: #fff;
     text-align: right;
     padding: 50px 70px 0 0;
-    margin: 0;
-    
+    margin: 0; 
 }
 
 .tag {
@@ -48,56 +47,8 @@ section#main-content.container {
     height: 550px;
 }
 
-#baby-steps-nav {
-    float: left;
-    background-color: aqua;
-    width: 300px;
-    
-    background: #ebeced; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #ebeced , #d1d5d6); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #ebeced , #d1d5d6); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #ebeced , #d1d5d6); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #ebeced , #d1d5d6); /* Standard syntax */
-
-}
-
-ul#take-baby-steps {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 0 0 0;
-    width: 300px;
-    height: 550px;
-    
-    background-image: url(../images/shadow_left_nav.jpg);
-    background-repeat:repeat-y;
-    background-position:center;
-}
-
-ul#take-baby-steps li {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    line-height: 60px;
-    color: #9ba0a4;
-    position: relative;
-    padding: 0 24px 0 124px;
-    border-bottom: 1px solid #fff;
-}
-
-ul#take-baby-steps li:hover {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    -weight: 600;
-    line-height: 60px;
-    color: #36abe1;
-    background-color: #fff;
-    padding: 0 24px 0 124px;
-    border-bottom: 1px solid #fff;
-}
-
 section[id|=baby-step] {
-    float: right;
     width: 540px;
-    padding: 0 70px 0 70px;
 }
 
 figure {
@@ -118,7 +69,7 @@ figure img {
 figcaption h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
-    weight: 600;
+    font-weight: 600;
     line-height: 20px;
     color: #36abe1;
     padding-left: 85px;
@@ -128,10 +79,10 @@ figcaption h1 {
 figcaption p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
-    weight: 300;
+    font-weight: 300;
     line-height: 20px;
     color: #5c6366;
-    padding-left: 85px;
+    padding: 7px 0 0 85px;
     margin: 14px 0 0 0;
 }
 
@@ -159,68 +110,181 @@ aside.friends-on-step a {
     text-decoration: none;
 }
 
-#take-baby-steps img {
+.tab input:focus + label,
+.tab label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #9ba0a4;
+    padding: 0 24px 0 124px;
+    border-bottom: 1px solid #fff;
+    background-image: url(../images/shadow_left_nav.jpg);
+    background-repeat: repeat-y;
+    background-position: center; 
+}
+
+.tab input:focus + label.baby-nav-1,
+.tab label.baby-nav-1 {
+    background-image: url(../images/icons/individual/icons_small_bs1.png), url(../images/shadow_left_nav.jpg);
+    background-repeat:no-repeat, repeat-y;
+    background-position: 246px, center;
+}
+
+.tab input:focus + label.baby-nav-1,
+.tab label.baby-nav-1:hover {
+    color: #36abe1;
+    font-weight: 600;
+    background-image: url(../images/icons/individual/icons_small_bs1_blue.png);  
+    background-color: #fff;
+    background-position: 246px,
+}
+
+.tab input:focus + label.baby-nav-2,
+.tab label.baby-nav-2 {
+    background-image: url(../images/icons/individual/icons_small_bs2.png), url(../images/shadow_left_nav.jpg);
+    background-repeat:no-repeat, repeat-y;
+    background-position: 246px, center;
+}
+
+.tab input:focus + label.baby-nav-2,
+.tab label.baby-nav-2:hover {
+    color: #36abe1;
+    font-weight: 600;
+    background-image: url(../images/icons/individual/icons_small_bs2_blue.png);  
+    background-color: #fff; 
+}
+
+.tab input:focus + label.baby-nav-3,
+.tab label.baby-nav-3 {
+    background-image: url(../images/icons/individual/icons_small_bs3.png), url(../images/shadow_left_nav.jpg);
+    background-repeat:no-repeat, repeat-y;
+    background-position: 246px, center;
+}
+
+.tab input:focus + label.baby-nav-3,
+.tab label.baby-nav-3:hover {
+    color: #36abe1;
+    font-weight: 600;
+    background-image: url(../images/icons/individual/icons_small_bs3_blue.png);  
+    background-color: #fff; 
+}
+
+.tab input:focus + label.baby-nav-4,
+.tab label.baby-nav-4 {
+    background-image: url(../images/icons/individual/icons_small_bs4.png), url(../images/shadow_left_nav.jpg);
+    background-repeat:no-repeat, repeat-y;
+    background-position: 246px, center;
+}
+
+.tab input:focus + label.baby-nav-4,
+.tab label.baby-nav-4:hover {
+    color: #36abe1;
+    font-weight: 600;
+    background-image: url(../images/icons/individual/icons_small_bs4_blue.png);  
+    background-color: #fff; 
+}
+
+.tab input:focus + label.baby-nav-5,
+.tab label.baby-nav-5 {
+    background-image: url(../images/icons/individual/icons_small_bs5.png), url(../images/shadow_left_nav.jpg);
+    background-repeat:no-repeat, repeat-y;
+    background-position: 246px, center;
+}
+
+.tab input:focus + label.baby-nav-5,
+.tab label.baby-nav-5:hover {
+    color: #36abe1;
+    font-weight: 600;
+    background-image: url(../images/icons/individual/icons_small_bs5_blue.png);  
+    background-color: #fff; 
+}
+
+.tab input:focus + label.baby-nav-6,
+.tab label.baby-nav-6 {
+    background-image: url(../images/icons/individual/icons_small_bs6.png), url(../images/shadow_left_nav.jpg);
+    background-repeat:no-repeat, repeat-y;
+    background-position: 246px, center;
+}
+
+.tab input:focus + label.baby-nav-6,
+.tab label.baby-nav-6:hover {
+    color: #36abe1;
+    font-weight: 600;
+    background-image: url(../images/icons/individual/icons_small_bs6_blue.png);  
+    background-color: #fff; 
+}
+
+.tab input:focus + label.baby-nav-7,
+.tab label.baby-nav-7 {
+    background-image: url(../images/icons/individual/icons_small_bs7.png), url(../images/shadow_left_nav.jpg);
+    background-repeat:no-repeat, repeat-y;
+    background-position: 246px, center;
+}
+
+.tab input:focus + label.baby-nav-7,
+.tab label.baby-nav-7:hover {
+    color: #36abe1;
+    font-weight: 600;
+    background-image: url(../images/icons/individual/icons_small_bs7_blue.png);  
+    background-color: #fff; 
+}
+
+.tab-group {
+    margin: 0 auto;
+    max-width: 40em;
+    width: 100%;
+}
+
+.tab {
+    width: 100%;
+}
+
+.tab input {
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    right:24px;
+    left: 0;
+    top: 0;
+    z-index: -999;
 }
 
-li[class|=baby-nav] {
-    background-repeat:no-repeat;
-    background-position: 246px;
+.tab label {
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 60px;
+    color: #9ba0a4;
+    position: relative;
+    padding: 0 24px 0 124px;
+    border-bottom: 1px solid #fff;
 }
 
-li[class|=baby-nav]:hover {
-    background-repeat:no-repeat;
-    cursor: pointer;
+.tab-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 2s, opacity 1s;
+    position:absolute;
+    top: 0;
+    left: 370px;
 }
 
-.baby-nav-1 {
-    background-image: url(../images/icons/individual/icons_small_bs1.png);
-}
-.baby-nav-1:hover {
-    background-image: url(../images/icons/individual/icons_small_bs1_blue.png);
+.tab-content p {
+    margin: 0 0;
 }
 
-.baby-nav-2 {
-    background-image: url(../images/icons/individual/icons_small_bs2.png);
-}
-.baby-nav-2:hover {
-    background-image: url(../images/icons/individual/icons_small_bs2_blue.png);
+.tab input:checked ~ .tab-content {
+    max-height: 30em;
+    opacity: 1;
 }
 
-.baby-nav-3 {
-    background-image: url(../images/icons/individual/icons_small_bs3.png);
-}
-.baby-nav-3:hover {
-    background-image: url(../images/icons/individual/icons_small_bs3_blue.png);
-}
-
-.baby-nav-4 {
-    background-image: url(../images/icons/individual/icons_small_bs4.png);
-}
-.baby-nav-4:hover {
-    background-image: url(../images/icons/individual/icons_small_bs4_blue.png);
-}
-
-.baby-nav-5 {
-    background-image: url(../images/icons/individual/icons_small_bs5.png);
-}
-.baby-nav-5:hover {
-    background-image: url(../images/icons/individual/icons_small_bs5_blue.png);
-}
-
-.baby-nav-6 {
-    background-image: url(../images/icons/individual/icons_small_bs6.png);
-}
-.baby-nav-6:hover {
-    background-image: url(../images/icons/individual/icons_small_bs6_blue.png);
-}
-
-.baby-nav-7 {
-    background-image: url(../images/icons/individual/icons_small_bs7.png);
-}
-.baby-nav-7:hover {
-    background-image: url(../images/icons/individual/icons_small_bs7_blue.png);
+.box {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 0;
+    width: 300px;
+    height: 550px;
+    background-image: url(../images/shadow_left_nav.jpg);
+    background-repeat:repeat-y;
+    background-position:center;
 }
